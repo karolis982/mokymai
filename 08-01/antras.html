@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: #e3f2fd;
+            margin: 0;
+            background-size: cover;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            line-height: 16px;
+        }
+        .box {
+            background-color: #ffffff;
+            width: 500px;
+            height: fit-content;
+            padding: 40px 20px 20px;
+            display: flex;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        .row input {
+            text-align: center;
+        }
+        .row2 {
+            display: flex;
+            justify-content: space-between;
+        }
+        input {
+            border: none;
+            background-color: none;
+            height: 28px;
+            font-size: 9px;
+            font-weight: 600;
+            color: #3e08e0;
+        }
+        .input0 {
+            border: 1px solid rgba(0, 0, 0, 0.226);
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .input0 input {
+            width: 90%;
+        }
+        .input1 {
+            border: 1px solid rgba(0, 0, 0, 0.226);
+        }
+        .input2 {
+            border: 1px solid rgba(0, 0, 0, 0.226);
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            font-size: 17px;
+            margin: 0;
+        }
+        button {
+            width: 100%;
+            border: none;
+            background-color: #2962ff;
+            height: 35px;
+            color: white;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 10px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 10px;
+            font-weight: 900;
+        }
+        .margin-top-higher {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form>
+            <h1>Card Number</h1>
+            <p>Enter 16-dgt card number on the card</p>
+            <div class="input0 margin-top-higher">
+                <img src="img/11ku.svg" width="20px">
+                <input type="text" placeholder="LT5165165165165165">
+            </div>
+            <div class="row margin-top-higher">
+                <div>
+                    <h1>Expiry Date</h1>
+                    <p>Enter the expiration date of the card</p>
+                </div>
+                <div class="input1">
+                    <input type="text" placeholder="MM">
+                </div>
+                <div>/</div>
+                <div class="input1">
+                    <input type="text" placeholder="YY">
+                </div>
+            </div>
+            <div class="row2 margin-top-higher">
+                <div>
+                    <h1>CVC Number</h1>
+                    <p>Enter card verification code from the back of the card</p>
+                </div>
+                <div class="input2">
+                    <input type="text">
+                    <i class="bi bi-eye"></i>
+                </div>
+            </div>
+            <div class="row2 margin-top-higher">
+                <div>
+                    <h1>Cardholder Name</h1>
+                    <p>Enter cardholder's name</p>
+                </div>
+                <div class="input2">
+                    <input type="text" placeholder="CARDHOLDER NAME">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+            </div>
+            <button>Pay Now</button>
+        </form>
+    </div>
+    
+</body>
+</html>

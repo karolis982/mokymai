@@ -1,0 +1,16 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #eee;
+}
+.background-white {
+    background-color: white;
+}
+.p-right {
+    padding-right: 35px;
+}
+.width-lower {
+    max-width: 170px;
+}
+.red {
+    color: red;
+}

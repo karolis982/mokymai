@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body {
+            background-color: black;
+            font-family:monospace;
+            font-size: 20px;
+            text-transform:capitalize;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .bmw {
+            background-image: url(img/bmw-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .audi {
+            background-image: url(img/audi-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .benz {
+            background-image: url(img/benz-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 350px;
+        }
+        .ford {
+            background-image: url(img/ford-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .alfa {
+            background-image: url(img/alfa-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 340px;
+            background-repeat: no-repeat;
+        }
+        .volkswagen {
+            background-image: url(img/vw-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .bentley {
+            background-image: url(img/bentley-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .maserati {
+            background-image: url(img/maserati-cover.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 100px;
+            
+        }
+        section {
+            width: 1400px;
+            height: 800px;
+            color: rgb(133, 133, 145);
+        }
+        .img-size {
+            width: 350px;
+        }
+        .img-right {
+            float: right; 
+            padding-right: 100px;
+        }
+        .img-left {
+            float: left;
+            padding-left: 100px;
+        }
+
+        li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: gray;
+        }
+        .text-white {
+            color: rgb(255, 255, 255);
+        }
+        .text-brown {
+            color: rgb(49, 8, 8);
+        }
+        a:hover {
+            color: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#bmw">bmw</a></li>
+            <li><a href="#audi">audi</a></li>
+            <li><a href="#mercedes-benz">mercedes-benz</a></li>
+            <li><a href="#ford">ford</a></li>
+            <li><a href="#alfa romeo">alfa romeo</a></li>
+            <li><a href="#volkswagen">volkswagen</a></li>
+            <li><a href="#bentley">bentley</a></li>
+            <li><a href="#maserati">maserati</a></li>
+        </ul>
+    </nav>
+        <section id="bmw" class="bmw">
+            <img class="img-left img-size" src="img/bmw.jpg">
+            <h1>bmw</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+        </section>
+        <section id="audi" class="audi">
+            <img class="img-right img-size" src="img/audi.jpg">
+            <h1>audi</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+           
+        </section>
+        <section id="mercedes-benz" class="text-blue benz">
+            <img class="img-left img-size" src="img/benz.jpg">
+            <h1>mercedes-benz</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+            
+        </section>
+        <section id="ford" class="text-brown ford">
+            <img class="img-right img-size" src="img/ford.jpg">
+            <h1>ford</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+            
+        </section>
+        <section id="alfa romeo" class="alfa">
+            <img class="img-right img-size" src="img/alfa.jpg">
+            <h1>alfa romeo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+            
+        </section>
+        <section id="volkswagen" class="text-white volkswagen">
+            <img class="img-left img-size" src="img/vw.jpg">
+            <h1>volkswagen</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+            
+        </section>
+        <section id="bentley" class="text-white bentley">
+            <img class="img-left img-size" src="img/bentley.jpg">
+            <h1>bentley</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+            
+        </section>
+        <section id="maserati" class="text-brown maserati">
+            <img class="img-right img-size" src="img/maserati.webp">
+            <h1>maserati</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quia aut ullam similique, explicabo provident deleniti aspernatur. Nostrum, delectus tempora?</p>
+            
+        </section>
+</body>
+</html>

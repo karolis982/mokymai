@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #D8DBDF;
+            margin: 0;
+            padding: 0 16px;
+            min-width: 320px;
+        }
+        label {
+            text-transform: uppercase;
+        }
+        p {
+            margin: 0 0 5px;
+            font-size: 8px;
+        }
+        .small-row {
+            display: flex;
+            margin-bottom: 80px;
+            margin-top: 60px;
+            gap: 20px;
+        }
+        .small-box {
+            background: white;
+            border: 16px solid white;
+            border-radius: 8px;
+            width: 17%;
+        }
+        .medium-row {
+            display: flex;
+            margin-bottom: 80px;
+            margin-top: 60px;
+        }
+        .medium-box {
+            border: 16px solid white;
+            border-radius: 8px;
+            background: white;
+            width: 20%;
+        }
+        .big-row {
+            display: flex;
+            margin-bottom: 80px;
+            margin-top: 60px;
+        }
+        .big-box {
+            background: white;
+            border-radius: 8px;
+            border: 16px solid white;
+            width: 50%;
+        }
+        img {
+            width: 100%;
+            background-color: rgb(197, 197, 197);
+            border-radius: 5px;
+        }
+        .value-row {
+            height: 30px;
+            display: flex;
+        }
+        .value-box {
+            display: flex;
+            width: 50%;
+        }
+        label {
+            font-size: 50px;
+            color: rgba(0, 0, 0, 0.737);
+        }
+        .name {
+            font-size: 12px;
+        }
+        .medium-price {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .price-box {
+            display: flex;
+            width: 20%;
+            justify-content: right;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        button {
+            background-color: rgb(2, 2, 54);
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .name-row {
+            display: flex;
+            width: 100%;
+        }
+        .stars-row {
+            display: flex;
+        }
+        .stars {
+            background-color: rgb(255, 255, 255);
+            width: 40%;
+        }
+        .stars-box {
+            display: flex;
+            width: 80%;
+        }
+        .button-box {
+            width: 50%;
+            display: flex;
+            justify-content: right;
+        }
+        @media screen and (max-width: 768px) {
+            .small-row,
+            .medium-row,
+            .big-row {
+                flex-wrap: wrap;
+            }
+            .small-box,
+            .medium-box,
+            .big-box {
+                
+                width: calc(50% - 10px);
+            }
+            .last-shoe {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            .small-row,
+            .medium-row,
+            .big-row {
+                flex-wrap: wrap;
+            }
+            .small-box,
+            .medium-box,
+            .big-box {
+                
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <label>small cards</label>
+    <div class="small-row">
+        <div class="small-box">
+            <img src="img/Forum_84_High_Shoes_White_IE7199_01_standard.png">
+        </div>
+        <div class="small-box">
+            <img src="img/Sambae_Shoes_White_ID0440_02_standard_hover.png">
+        </div>
+        <div class="small-box">
+            <img src="img/Gazelle_Shoes_Green_ID6106_02_standard_hover.png">
+        </div>
+        <div class="small-box">
+            <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+        </div>
+        <div class="small-box">
+            <img src="img/Samba_OG_Shoes_White_IF6513_04_standard.png">
+        </div>
+        <div class="small-box">
+            <img src="img/Sambae_Shoes_White_ID0440_02_standard_hover.png">
+        </div>
+    </div>
+    <label>medium cards</label>
+    <div class="medium-row">
+        <div class="medium-box">
+            <img src="img/Sambae_Shoes_White_ID0440_02_standard_hover.png">
+            <div class="name-row">
+                <span class="name">Nike Air Force 1 '07 LV8'</span>
+                <div class="medium-row">
+                <span class="medium-price">$110.97</span>
+                </div>
+            </div>
+        </div>
+        <div class="medium-box">
+            <img src="img/Gazelle_Shoes_Green_ID6106_02_standard_hover.png">
+            <div class="name-row">
+                <span class="name">Nike Air Force 1 '07 LV8'</span>
+                <span class="medium-price">$110.97</span>
+            </div>
+        </div>
+        <div class="medium-box">
+            <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+            <div class="name-row">
+                <span class="name">Nike Air Force 1 '07 LV8'</span>
+                <span class="medium-price">$110.97</span>
+            </div>
+        </div>
+        <div class="medium-box">
+            <img src="img/Forum_84_High_Shoes_White_IE7199_01_standard.png">
+            <div class="name-row">
+                <span class="name">Nike Air Force 1 '07 LV8'</span>
+                <span class="medium-price">$110.97</span>
+            </div>
+        </div>
+        <div class="medium-box last-shoe">
+            <img src="img/Samba_OG_Shoes_White_IF6513_04_standard.png">
+            <div class="name-row">
+                <span class="name">Nike Air Force 1 '07 LV8'</span>
+                <span class="medium-price">$110.97</span>
+            </div>
+        </div>
+    </div>
+    <label>big-cards</label>
+            <div class="big-row">
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="big-row">
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-box">
+                    <img src="img/Conductor_High_Shoes_White_ID2203_02_standard_hover.png">
+                    <div class="stars-row">
+                        <div class="stars-box">
+                            <img class="stars" src="img/Stars.svg">
+                        </div>
+                        <div class="price-box">
+                            <span>$110.97</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="name">Nike Air Force 1 '07 LV8'</span>
+                    </div>
+                    <p>Men's Shoes</p>
+                    <div class="value-row">
+                        <div class="value-box">
+                            <input type="number" value="1" min="1" max="9">
+                        </div>
+                        <div class="button-box">
+                            <button class="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

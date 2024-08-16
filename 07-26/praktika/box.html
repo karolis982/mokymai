@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        .row {
+            width:1000px;
+            height: 250px;
+            margin: 0 auto;
+            background-color:#bbada0;
+            display: flex;
+            font-family:"Clear Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+        .box {
+            width: 210px;
+            height: 210px;
+            display: flex;
+            font-size: 55px;
+            justify-content: center;
+            align-items: center;
+        }
+        .brown {
+            background-color:#cdc1b4;
+        }
+        .light-yel {
+            background-color: #eee4da;
+            color:#776e65;
+        }
+        .yelow {
+            background-color: #eee1c9;
+            color:#776e65;
+        }
+        .orange {
+            background-color:#f3b27a;
+            color:#f9f6f2;
+        }
+        .red {
+            background-color: #f69664;
+            color: #f9f6f2;
+        }
+        .gap {
+            gap: 5px;
+        }
+        .justify {
+            justify-content:space-evenly;
+        }
+        .align {
+            align-items: center;
+        }
+        .text-al {
+            font-size: 80px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row gap justify align">
+        <div class="box brown"></div>
+        <div class="box brown"></div>
+        <div class="box light-yel"><h1>2</h1></div>
+        <div class="box light-yel"><h1>2</h1></div>
+    </div>
+    <div class="row gap justify align">
+        <div class="box brown"></div>
+        <div class="box brown"></div>
+        <div class="box yelow"><h1>4</h1></div>
+        <div class="box yelow"><h1>4</h1></div>
+    </div>
+    <div class="row gap justify align">
+        <div class="box brown"></div>
+        <div class="box brown"></div>
+        <div class="box yelow"><h1>4</h1></div>
+        <div class="box orange"><h1>8</h1></div>
+    </div>
+    <div class="row gap justify align">
+        <div class="box light-yel"><h1>2</h1></div>
+        <div class="box yelow"><h1>4</h1></div>
+        <div class="box orange"><h1>8</h1></div>
+        <div class="box red"><h1>16</h1></div>
+    </div>
+    
+</body>
+</html>
